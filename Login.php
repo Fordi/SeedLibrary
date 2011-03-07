@@ -1,4 +1,7 @@
 <?php
+/* TODO: 
+	This file represents the Login action of the User controller
+ */
 /* Program: Login.php
  * Desc: Login program for the Members only 
  *       of the seed library. It provides two
@@ -7,13 +10,12 @@
  *	 Login Names and passwords are stored in a 
  *	 MySQL database.
  */
-error_reporting(E_ALL); // report all errors
-session_start();
-include("misc.inc");
+ 
+require_once(dirname(__FILE__).'/lib/bootstrap.php');
+var_dump($_POST['do']);
 $_SESSION['do'] = @$_POST['do'];  //why do I need this to make 'do' work?
 
-switch (@$_POST['do'])
-{
+switch (@$_POST['do']) {
   case "login":
 		
     $cxn = mysqli_connect($host, $user, $pword, $database)
@@ -275,5 +277,3 @@ switch (@$_POST['do'])
    default:
 	include("login_form.php");
   }
-?>
-			

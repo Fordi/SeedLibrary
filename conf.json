@@ -1,0 +1,7 @@
+{
+	"Database":{
+		"dsn": "mysql:host=localhost;dbname=seeddb",
+		"user": "root",
+		"pass": ""
+	}
+}
