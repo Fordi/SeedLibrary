@@ -6,12 +6,11 @@
 		<label for="<?=$_name?>-<?=$__ID?>"><?=$_label?></label>
 	<?endIf?>
 	<ul class="radiolist">
-		<?forEach($_options as $key=>$val):?>
-			<?$optId = $_name.'-'.substr(md5($_name.':'.$key.'.'.$__ID), 0, 4)?>
-			<?$checked = ($key==$value)?' checked="checked"':''?>
+		<?forEach($_options as $key=>$value):?>
+			<?$optId = $name.'-'.substr(0,4, md5($_name.':'.$key))?>
 			<li>				
-				<input type="radio" class="radio" name="<?=$_name?>" value="<?=$key?>" id="<?=$optId?>"<?=$checked?>/>
-				<label for="<?=$optId?>"><?=$val?></label>
+				<input type="radio" class="radio" name="<?=$_name?>" value="<?=$key?>" id="<?=$optId?>" />
+				<label for="<?=$optId?>"><?=$value?></label>
 			</li>
 		<?endForEach?>
 	</ul>

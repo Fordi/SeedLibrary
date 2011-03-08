@@ -1,0 +1,1 @@
+<a href="<?=Controller::URL("User", "Logout")?>">Log Out</a>

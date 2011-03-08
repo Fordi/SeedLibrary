@@ -1,15 +1,13 @@
+<?/* TODO: preexisting values are not yet populated.  Must develop User model before this can be done. */?>
 <?=tag('form', array(
-	'_action'=>Controller::URL($Controller, $Action),
+	'_action'=>'Login.php',
 	'_caption'=>String('User.Login.Title'),
-	'_id'=>'userLoginForm'
+	'_id'=>'userLoginForm',
+	'do'=>'login'
 ))?>
-	<?if (!empty($badLogin)):?>
-		<p class="error"><?=String('User.Login.BadLogin')?></p>
-	<?endIf?>
 	<?=tag('input.text', array(
 		'_name'=>'Email',
-		'_label'=>String('User.Login.Email'),
-		'value'=>@$form['Email']
+		'_label'=>String('User.Login.Email')
 	)).tag()?>
 	<?=tag('input.password', array(
 		'_name'=>'Password',
