@@ -21,6 +21,7 @@ INSERT INTO `userseedreg` (
 	"",
 	"",
 	"",
+--email: admin
 	"admin",
 	"No",
 	"Easy",

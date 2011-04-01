@@ -19,6 +19,7 @@ class Model implements ArrayAccess, Iterator {
 	public function next() { next($this->data); }
 	public function rewind() { reset($this->data); }
 	public function valid() { return $this->key()===null; }
+	
 	public static function load($model) {
 		$modelName = $model.'Model';
 		include_once('mdl/'.$modelName.'.php');

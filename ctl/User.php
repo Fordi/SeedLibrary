@@ -47,4 +47,8 @@ class User extends Controller {
 		
 	}
 	
+	function Profile() {
+		$current = UserModel::loggedInUser();
+	}
+	
 }

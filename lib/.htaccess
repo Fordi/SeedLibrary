@@ -1,4 +1,3 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} ^request\.php
-RewriteRule ^(.*)$ ../lib/request.php?rewrite_url=$1 [L]
-
+RewriteRule ^(.*)$ request.php/$1 [L]
