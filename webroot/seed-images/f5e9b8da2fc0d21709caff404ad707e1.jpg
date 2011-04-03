@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<title>Seed Savers Exchange</title>
+<meta name="description" content="Since 1975, Seed Savers Exchange members have passed on approximately one million samples of rare garden seeds to other gardeners. We are a non-profit organization of gardeners dedicated to saving and sharing heirloom seeds.">
+<meta name="keywords" content="Seed Savers Exchange, rare garden seeds, heirloom seeds">
+<style type="text/css">
+<!--
+body {
+	background: url(http://www.seedsavers.org/images/bg_page.jpg) #7C9D7E repeat-x;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+body, td, th, p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height:16px;
+}
+p {
+	margin: 0 0 8px 0;
+}
+a {
+	color:#000000;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin:0px;
+	padding:0px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+h1 {
+	font-size:12px;
+}
+#container {
+	width: 990px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left;
+}
+#tab-holder {
+	background-image: url(http://www.seedsavers.org/images/bg_container_0911.jpg);
+}
+#header {
+	padding:0px;
+	height:173px;/*background: url(http://www.seedsavers.org/images/new_bg_header.jpg) repeat-y;*/
+	background-image: url(images/header_preservation.jpg);
+	background-repeat: no-repeat;
+}
+#HsearchBox {
+	height: 35px;
+	margin: 0px 15px 30px 0px;
+	padding: 0px;
+	text-align: right;
+	width: 220px;
+	float: right;
+}
+label.Hsearch1 {
+	font-family: "Georgia", Times New Roman, Times, serif;
+	font-style: italic;
+	font-size: 14px;
+	color: #f2eba2;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+input.Htextbox {
+	color: #000000;
+	background: #ffffee;
+	border: 0;
+	margin: 0px 0px 0px 5px;
+	padding-left: 5px;
+	width: 100px;
+	font-weight: normal;
+	vertical-align: middle;
+}
+#header-ad-holder {
+	width:240px;
+	height:173px;
+	padding:0;
+	margin:0;
+}
+#menu-main {
+	padding: 0px;
+	text-align:right;
+	margin: 0px 20px 0px 0px;
+}
+#menu-main a, #text-top a {
+	padding-left:0px;
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+}
+#menu-main a:hover, #text-top a:hover {
+	color:#aabb67;
+	text-decoration:none;
+}
+#text-top {
+	padding: 0px;
+	text-align:right;
+	margin: 2px 0px 0px 240px;
+	color:#FEF5B0;
+	float:left;
+}
+#holder-mission {
+	padding:0px 10px 0px 0px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	height:159px;
+}
+#mission {
+	width:490px;
+}
+#mission h1 {
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding: 10px 0 22px 0px;
+}
+#calender {
+	width:240px;
+}
+#calender img {
+	margin: 0 4px 0px 10px;
+}
+#calender h1 {
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding:10px 0 10px 10px;
+}
+#calender h1 a {
+	color:#FEF5B0;
+}
+#sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 240px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding:0;
+	margin:0;
+	height: 50px;/*background-color: #1E5534;*/
+}
+#sidebar1-content {
+	padding: 10px;
+	background:url(http://www.seedsavers.org/images/heading_01.gif) repeat-x;
+}
+#sidebar1-content h1, h1.yellow a {
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+}
+#sidebar1-content h2 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	color:#1E5534;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+	text-align: left;
+	font-weight: normal;
+}
+#sidebar2 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 240px; /* the actual width of this div, in standards-compliant browsers, or standards mode in Internet Explorer will include the padding and border in addition to the width */
+	padding:0;
+	margin:0;
+}
+#sidebar2-content {
+	color:#FFFFFF;
+}
+#sidebar2-content a, #calender a {
+	color:#FFFFFF;
+}
+#sidebar2-content a:hover, #calender a:hover {
+	color:#7C9D7E;
+	font-size: 12px;
+}
+#sidebar2-content h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height:16px;
+	color:#FEF5B0;
+	padding:0;
+	margin:0;
+}
+#sidebar2-content h3 {
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;/*padding: 10px 0 10px 0px;*/
+}
+#heading30-green-bg {
+	height:10px;
+	background:#183C22;
+}
+#sidebar2-content td {
+	padding:10px;
+}
+.green-dotted-line {
+	background:url(http://www.seedsavers.org/images/green-dotted-line.gif) no-repeat bottom;
+}
+#holder-mainContent {
+	margin: 0 250px;
+	background:url(http://www.seedsavers.org/images/heading_01.gif) repeat-x top;
+}
+#mainContent {
+	padding:6px;
+}
+#mainContent h1 {
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding:4px 0 8px 6px;
+}
+#whats-new-tab {
+/*margin-top:8px;*/
+        }
+#whats-new-tab td {
+	padding-top:8px;
+	padding-bottom:8px;
+	margin-bottom:8px;
+	border-bottom:#336600 1px dotted;
+}
+#whats-new-tab h1 {
+	color:#1E5534;
+	margin-bottom:0px;
+	padding-bottom:0px;
+	padding-left:0px;
+}
+#footer {
+	padding: 0px;
+	border-top:#7C9D7E 10px solid;
+	background:#1B5031;
+}
+#footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding:0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+#menu-main-footer {
+	padding:0px 15px 0px 0px;
+	text-align:right;
+}
+#menu-main-footer a {
+	padding-left:0px;
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+}
+#menu-main-footer a:hover {
+	color:#aabb67;
+	text-decoration:none;
+}
+#footer-copy {
+	padding:10px;
+	color:#ffffff;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+	width:220px;
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.leftpad10 {
+	padding-left:10px;
+	padding-right:10px;
+}
+.rightpad10 {
+	padding-right:10px;
+}
+.botpad8 {
+	padding-bottom:8px;
+}
+.bullet {
+	padding: 0px;
+	margin: 0px;
+	color:#FEF5B0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	font-weight:bold;
+}
+.style1 {
+	color: #FEF5B0
+}
+a:hover {
+	color: #FFCC33;
+}
+.style2 {font-size: 24px}
+.readmore {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1E5534;
+	text-align: right;
+}
+-->
+</style>
+<!--[if IE 5]>
+        <style type="text/css"> 
+        /* place css box model fixes for IE 5* in this conditional comment */
+         #sidebar1 { width: 240px; }
+         #sidebar2 { width: 240px; }
+        </style>
+        <![endif]-->
+<!--[if IE]>
+        <style type="text/css"> 
+        /* place css fixes for all versions of IE in this conditional comment */
+         #sidebar2,  #sidebar1 { padding-top: 0px; }
+         #mainContent { zoom: 1; }
+        /* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+        </style>
+        <![endif]-->
+<script type="text/javascript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+        </script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</HEAD>
+<body>
+<div id="container">
+
+  <div id="header">
+    <table width="990" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="103px" colspan="1"><div id="text-top"><a href="http://yearbook.seedsavers.org/" target="_blank" style="background:none;">Online Yearbook</a><span class="bullet"> • </span><a href="http://forums.seedsavers.org/">Forum</a></div>
+          <form id="HsearchBox" method="GET" action="http://www.seedsavers.org/Items.aspx" >
+            <label class="Hsearch1">Search</label>
+
+            <input type="text"  class="Htextbox"  size="18" maxlength="256" name="search" value="">
+            <input name="image2" type="image" src="http://www.seedsavers.org/images/go.gif" border="0" align="middle">
+          </form></td>
+        <td id="header-ad-holder" rowspan="2"><a href="http://www.seedsavers.org/Content.aspx?src=membership.htm"><img src="http://www.seedsavers.org/images/join_sse.jpg" alt="Join Seed Savers Exchange" width="240" height="173" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td height="70px"><div id="menu-main"><a href="http://www.seedsavers.org/Content.aspx?src=aboutus.htm" style="background:none;">About </a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=membership.htm">Membership</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=education.htm">Education</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/QuickOrder.aspx">Quick Order</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=buyonline.htm"> Online Store</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=customerserv.htm">Contact </a></div></td>
+
+      </tr>
+    </table>
+  </div>
+  <table border="0" cellpadding="0" cellspacing="0" style="width:990px; height:145px;" id="tab-holder">
+    <tr>
+      <td style="background:url(http://www.seedsavers.org/images/bg_header_mission_0911_01.jpg) top left no-repeat; height:159px;" width="246" valign="top"></td>
+      <td width="504" valign="top" id="mission" style="background:url(http://www.seedsavers.org/images/bg_header_mission_0911_02.jpg) repeat-x; padding-left:10px;"><h1>Our Mission</h1>
+        <p><b>Since 1975, Seed Savers Exchange members have passed on approximately one million samples of rare garden seeds to other gardeners. </b>We are a non-profit organization of gardeners dedicated to saving and sharing heirloom seeds.</p>
+
+        <a href="http://www.seedsavers.org/Content.aspx?src=aboutus.htm">Learn more about us and our mission</a></td>
+      <td width="240" rowspan="3" align="right" valign="top"><div id="sidebar2">
+          <table border="0" cellpadding="0" cellspacing="0" id="sidebar2-content">
+            <tr>
+              <td height="57" class="bullet style1" id="heading30-green-bg"><h1><a href="http://www.seedsavers.org/CatalogRequest.aspx" class="bullet">Request a catalog</a><br><a href="http://www.seedsavers.org/Content.aspx?src=helpfullinks.htm">Helpful Links</a></h1></td>
+            </tr>
+            <tr>
+              <td><p><img src="/images/request_catalog_2011.jpg" width="220" height="286"></p>
+
+              <p><a href="http://www.seedsavers.org/pdf/SSE2011.pdf" target="_blank">Download the 2011 SSE Color Catalog </a><br><a href="http://www.seedsavers.org/flashcatalog.html" target="_blank">Click here to flip through our catalog!</a></p></td>
+            </tr>
+            <tr>
+              <td height="57" class="bullet style1" id="heading30-green-bg"><img src="/images/donation.jpg" width="70" height="69" align="left" class="rightpad10"><a href="http://www.seedsavers.org/Items.aspx?hierId=72"><br>
+              Make a Donation&raquo;</a></td>
+            </tr>
+            
+            <tr>
+              <td height="127"><a href="http://www.seedsavers.org/hermansgardenletter.htm" target="_blank"><img src="http://www.seedsavers.org/images/hermans_garden_0911.jpg" alt="Herman's Garden Seed Donation Program" width="115" height="175" border="0" align="left" class="rightpad10" /></a><a href="http://www.seedsavers.org/Content.aspx?src=calendar_of_events.htm"></a>
+                <h2><a href="http://www.seedsavers.org/hermansgardenletter.htm" target="_blank">Herman's
+                  Garden
+                  Seed Donation
+                  Program</a></h2>
+                <p>&nbsp;</p>
+                <p>We Give Seeds
+                  To Worthy
+                  Causes</p>
+                  
+                <p>&nbsp;</p></p></td>
+
+            </tr>
+          </table>
+        </div></td>
+    </tr>
+    <tr>
+      <td valign="top"><div id="sidebar1">
+          <div id="sidebar1-content">
+            <h1><a href="http://www.seedsavers.org/Content.aspx?src=calendar_of_events.htm" class="bullet">Calendar of events</a></h1>
+
+           <p align="center"><br><br>
+           </p>
+            </p>
+            
+            <p align="center"><span class="green-dotted-line"><a href="http://www.seedsavers.org/Content.aspx?src=calendar_of_events.htm#grafting"><img src="/images/home_grafting.jpg" width="220" height="150" border="0"></a></span></p>
+            <h2 class="green-dotted-line">April 9-10, 2011<br>
+            Heirloom Apple Bench Grafting Workshop<br>
+            <a href="http://www.seedsavers.org/Content.aspx?src=calendar_of_events.htm#grafting"><span class="readmore">Read more &raquo;</span></a><br><br></h2>
+            </p>
+             <h2 class="green-dotted-line"><br>
+               <img src="images/birding_home.jpg" width="220" height="150"><br>
+               April 30, 2011<br>
+            Bird and Wildflower Walk<br>
+            <br>
+            <a href="http://www.seedsavers.org/Content.aspx?src=calendar_of_events.htm#grafting"><span class="readmore">Read more &raquo;</span></a><br><br></h2>
+            </p>
+           
+            <p><a href="http://www.seedsavers.org/Items.aspx?hierId=16"></p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+
+          <!-- end #sidebar1 -->
+        </div></td>
+      <td valign="top" style="padding:0px 8px 0px 10px;" ><table width="97%" border="0" cellpadding="0" cellspacing="0" id="whats-new-tab">
+          <tr>
+            <td colspan="2" style="background:url(http://www.seedsavers.org/images/heading_01.gif) repeat-x; padding-left:10px;">
+            <h1>&nbsp;</h1></td>
+          </tr>
+          
+          <tr>
+            <td height="142"><div align="center"><img src="images/sval-deposit.png" width="170" height="195" alt="sval-dep" longdesc="http://www.seedsavers.org/Content.aspx?src=whatsnew.htm#svalbard3"><br>
+              </div></td>
+            <td class="leftpad10"><h1>Svalbard Global Seed Vault</h1>
+              <p>Seed Savers Exchange has  announced that a fourth deposit of 271 heirloom seed varieties has been made  into the Svalbard Global Seed Vault in Norway...&nbsp; &nbsp;</p>
+<p><a href="http://www.seedsavers.org/Content.aspx?src=whatsnew.htm#svalbard3">Read More</a>              </p></td>
+          </tr>
+          
+          <tr>
+            <td height="142"><div align="center"><img src="images/conference-update.jpg" width="170" height="170"><br>
+              </div></td>
+              
+              
+            <td class="leftpad10"><h1 align="left"><span id="page-title">31st Annual Conference and Campout<br>
+              <br>
+            </span>
+          </h1>
+            <a href="http://www.seedsavers.org/Content.aspx?src=conference.htm">Read more </a></tr>
+          
+          
+          
+          <tr>
+            <td height="142"><div align="center"><a href="http://www.seedsavers.org/Content.aspx?src=whatsnew.htm#sr"><img src="images/home_seedrack.jpg" alt="Seed Rack Program" width="170" height="170" border="0"></a><br>
+              </div></td>
+            <td class="leftpad10"><h1>Outstanding in the Field </h1>
+              <p>Let your favorite retailer know that Seed Savers Exchange offers a seed rack program with an array of over 600 outstanding heirloom varieties.<br><br>
+              Get started today!  Email <a href="mailto:seedracks@seedsavers.org">Seed Racks</a> with your contact information and we'll send information your way!</p>
+              <p><a href="http://www.seedsavers.org/pdf/seedrack_2011.pdf" target="_blank">Read More</a><br><a href="http://www.seedsavers.org/Content.aspx?src=whatsnew.htm#sr">Poster</a></p></td>
+          </tr>
+          
+          <tr>
+            <td height="142"><div align="center"><a href="http://www.seedsavers.org/Content.aspx?src=fundraiser.htm"><img src="images/home_fundraiser.jpg" alt="SSE Fundraiser" width="133" height="250" border="0"></a><br>
+            </div></td>
+            <td class="leftpad10"><h1>Fall Fundraising Program!</h1>
+              <p>Seed Savers has developed a new fundraising program as a healthy, sustainable alternative to other school fundraising programs.<br><br><a href="http://www.seedsavers.org/Content.aspx?src=fundraiser.htm">Click here to learn more</a><br><a href="http://www.seedsavers.org/pdf/fundraiser_fall_calendar.pdf" target="_blank">Fall Calendar</a></p>             </td>
+          </tr>
+          
+               
+         
+          <tr>
+            <td height="70" colspan="2"><a href="http://www.seedsavers.org/Content.aspx?src=oursideofthestory.htm"><h1 align="center" class="style2">Our Side of the Story</h1></a><br><p align="center">Response to Kent Whealy's Speech</p></td>
+          </tr>
+                   
+      </table></td>
+    </tr>
+    <tr>
+      <td colspan="3"><div id="footer">
+          <table width="990" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td id="footer-copy">&copy; 2010 Seed Savers Exchange</td>
+
+              <td id="menu-main-footer"><a href="http://www.seedsavers.org/Content.aspx?src=aboutus.htm" style="background:none;">About Us</a><span class="bullet"> • </span><a href="http://forums.seedsavers.org/">Forum</a><span class="bullet"> • </span><a href="http://blog.seedsavers.org/" target="_blank">Blog</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=membership.htm">Membership</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/QuickOrder.aspx">Quick Order</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=buyonline.htm">Buy Online</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=customerserv.htm">Customer  Service</a><span class="bullet"> • </span><a href="http://www.seedsavers.org/Content.aspx?src=PrivacyPolicy5.htm">Privacy Policy</a></td>
+
+            </tr>
+          </table>
+          <!-- end #footer -->
+        </div></td>
+    </tr>
+  </table>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+  <!-- end #container -->
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8607650-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

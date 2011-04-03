@@ -1,33 +1,9 @@
-INSERT INTO `userseedreg` (
-	`DateReg`,
-	`NameFirst`,
-	`NameLast`,
-	`OrgName`,
-	`Address`,
-	`City`,
-	`PhoneNum`,
-	`Email`,
-	`ContactYN`,
-	`SeedExpLvl`,
-	`GardenExpLvl`,
-	`Volunteer`,
-	`Password`,
-	`admin`
+INSERT INTO `users` (
+	`name`, 
+	`pass`,
+	`rights`
 ) VALUES (
-	"1970-01-01 00:00:00",
-	"Catalog",
-	"Admin",
-	"Seed Library",
-	"",
-	"",
-	"",
---email: admin
-	"admin",
-	"No",
-	"Easy",
-	"Easy",
-	"",
--- Password: 123456
-	"e10adc3949ba59abbe56e057f20f883e", 
-	1
+	"admin", 
+	sha1("12345"),
+	"admin"
 );

@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `seeds` (
+	`id` INT AUTO_INCREMENT PRIMARY KEY,
+	`name` TINYTEXT NOT NULL,
+	`quantity` INT NOT NULL,
+	`donated` DATE,
+	`description` LONGTEXT NOT NULL
+) CHARSET=utf8;

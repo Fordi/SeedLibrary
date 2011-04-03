@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS `seed_attributes` (
+	`id` INT AUTO_INCREMENT PRIMARY KEY,
+	`seed_id` INT NOT NULL,
+	`name` TINYTEXT NOT NULL,
+	`json_value` TEXT NOT NULL
+) CHARSET=utf8;
