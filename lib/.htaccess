@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} ^request\.php
+RewriteCond %{REQUEST_FILENAME} !^request\.php
 RewriteRule ^(.*)$ request.php/$1 [L]

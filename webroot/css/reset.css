@@ -45,8 +45,12 @@ table {
 html, body {
 	width: 100%;
 	height: 100%;
-	font-family: 'GillSans';
+	font-family: 'Tuffy', 'Helvetica Neue', 'Arial', 'Liberation Sans', sans-serif;
+	color: #333;
+	font-size: 1.25em;
 }
-html {
-	background: transparent url(../img/page.jpg) 50% 0 repeat;
+
+a {
+	text-decoration: inherit;
+	color: inherit;
 }
