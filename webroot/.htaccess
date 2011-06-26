@@ -1,4 +1,4 @@
-RewriteEngine Off
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /../lib/request.php/$1 [L]
+RewriteRule ^(.*)$ /lib/request.php?u=$1 [L]
 

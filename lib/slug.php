@@ -9,14 +9,13 @@ function camelize($name) {
 		$x[$i] = strToUpper(substr($x[$i],0,1)).strToLower(substr($x[$i],1));
 	return join('', $x);
 }
-
 class Cache implements ArrayAccess, Iterator {	
 	private $namespace;
 	private $cacheDir;
 	private $index;
 	private $currentItem;
 
-	public static function cache($namespace, $keys, $value=null) {
+	public static function cacheVal($namespace, $keys, $value=null) {
 		$cacheDir = dirname(__FILE__).'/cache/';
 		if (!is_dir($cacheDir)) mkdir($cacheDir);
 		$cacheId = $namespace.'-'.md5($keys);
@@ -36,10 +35,10 @@ class Cache implements ArrayAccess, Iterator {
 		$this->rewind();
 	}
 	
-	function __get($name) { return self::cache($this->namespace, $name); }
-	function __set($name, $value) { return self::cache($this->namespace, $name, $value); }
-	function __isset($name) { return !empty(self::cache($this->namespace, $name)); }
-	function __unset($name) { return self::cache($this->namespace, $name, false); }
+	function __get($name) { return self::cacheVal($this->namespace, $name); }
+	function __set($name, $value) { return self::cacheVal($this->namespace, $name, $value); }
+	function __isset($name) { $ret = self::cacheVal($this->namespace, $name); return !empty($ret); }
+	function __unset($name) { return self::cacheVal($this->namespace, $name, false); }
 	
 	function offsetExists($name) { return $this->__isset($name); }
 	function offsetGet($name) { return $this->__get($name); }
@@ -69,6 +68,7 @@ class Cache implements ArrayAccess, Iterator {
 	public function valid() { return $this->currentItem !== false; }
 }
 function Cache($namespace, $keys, $value=null) {
-	return Cache::cache($namespace, $keys, $value);
+	return Cache::cacheVal($namespace, $keys, $value);
 }
+
 
