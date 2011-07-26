@@ -25,10 +25,6 @@ class User extends Controller {
 		UserModel::Logout();
 		Controller::Redirect("Home", "index", $args, $this->formData);
 	}
-	
-	
-	
-	
 	function Register() {
 		$current = UserModel::loggedInUser();
 		if (!empty($current)) Controller::Redirect("Home", "Dashboard");
