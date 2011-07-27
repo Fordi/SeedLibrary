@@ -1,5 +1,7 @@
 <?php
 require_once(dirname(__FILE__).'/phpquery.php');
+require_once(dirname(__FILE__).'/slug.php');
+require_once(dirname(__FILE__).'/class.Cache.php');
 class SeedSavers {
 	private static function cacheSeed($seedId, $value=null) {
 		return cache('seeds', $seedId, $value);

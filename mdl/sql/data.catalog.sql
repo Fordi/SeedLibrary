@@ -1,0 +1,17 @@
+INSERT INTO `catalog` (`id`, `name`, `slug`, `parent`, `view`, `badge`) VALUES
+	(0, 'Flowers', 'flowers', -1, null, '/seed-images/0c2983923979caef7f259b13e4bca028.jpg'),
+	(1, 'Herbs', 'herbs', -1, null, '/seed-images/da57fb25721e114028b33cab6acb7da2.jpg'),
+	(2, 'Edibles', 'edibles', -1, null, '/seed-images/df51a49ce2c37437eefa9572a7b05cc0.jpg'),
+	(3, 'Beans', 'beans', 2, null, '/seed-images/a54fffd747c9a3b22a62a2220d04bea3.jpg'),
+	(4, 'Cabbage, Broccoli, and other Brassicas', 'brassicas', 2, null, '/seed-images/3933f8562853791d1ce8f1655ba28bbc.jpg'),
+	(5, 'Corn', 'corn', 2, null, '/seed-images/7d71ab82501ef3ff2f32041788f458b3.jpg'),
+	(6, 'Cucumber', 'cucumber', 2, null, '/seed-images/7ecc8be4a0dbd8d92248641502c6c20f.jpg'),
+	(7, 'Eggplant', 'eggplant', 2, null, '/seed-images/81a65d36eff3d3af76ecdb16eedcecd2.jpg'),
+	(8, 'Greens', 'greens', 2, null, '/seed-images/87ca471da4051c10459aa46bf1bba59f.jpg'),
+	(9, 'Melons and Berries', 'melons-and-berries', 2, null, '/seed-images/d86f795098032e9df34245f64c94891b.jpg'),
+	(10, 'Okra', 'okra', 2, null, '/seed-images/9619f61338371a68c8fd01edbe380696.jpg'),
+	(11, 'Peas', 'peas', 2, null, '/seed-images/2c4b649d0d933fb5b567dc75ba4af685.jpg'),
+	(12, 'Peppers', 'peppers', 2, null, '/seed-images/4e6303255e50e8a3cda0f9543c3854b2.jpg'),
+	(13, 'Pumpkins, Squashes and Gourds', 'squash', 2, null, '/seed-images/0ab1bd93a32389fdede9846f4f159452.jpg'),
+	(14, 'Tomatoes and Tomatillos', 'tomatoes', 2, null, '/seed-images/00c328f4eff39768597d9365bc2c6a83.jpg'),
+	(15, 'Roots', 'roots', 2, null, '/seed-images/e9d1ec37c6cba04c4fc5d10389f85080.jpg');

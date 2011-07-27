@@ -1,4 +1,6 @@
 <?php
+require_once(dirname(__FILE__).'/core.php');
+useLibraries('templating');
 class Controller {
 	protected $view = 'index';
 	protected $action = 'index';
@@ -6,14 +8,16 @@ class Controller {
 	protected $formData = array();
 	protected $data = array();
 	public function render() {
-		return template($this->viewClass.'/'.$this->view, array_merge(
+		$viewPath = $this->viewClass.'/'.$this->view;
+		$loadData = array_merge(
 			$this->data,
 			array(
 				'form'=>$this->formData,
 				'Controller'=>$this->viewClass,
 				'Action'=>$this->action
 			)
-		));
+		);
+		return template($viewPath, $loadData);
 	}
 	public function index() {
 	}
@@ -29,15 +33,18 @@ class Controller {
 		if ($args===null) $args = array();
 		if ($request===null) $request = array();
 		@include_once('ctl/'.$ctl.'.php');
+		
 		if (class_exists($ctl)) {
 			$class = new $ctl();
 		} else {
 			$class = new self();
 		}
+		
 		$class->formData = $request;
 		$class->viewClass = $ctl;
 		$class->view = $act;
 		$class->action = $act;
+		
 		call_user_func(array($class, $act), $args);
 		return $class->render();
 	}

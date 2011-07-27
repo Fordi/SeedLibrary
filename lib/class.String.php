@@ -1,4 +1,6 @@
 <?php
+require_once(dirname(__FILE__).'/../lib/core.php');
+useLibraries('DB');
 class String implements ArrayAccess {
 	private static $instance;
 	private static $getString;

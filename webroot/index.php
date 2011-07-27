@@ -23,6 +23,13 @@
 					<input type="text" class="text" name="q" />
 					<input type="submit" class="submit" value="&#x03D9;"/>
 				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/category/flowers">Flowers</a></li>
+						<li><a href="/category/herbs">Herbs</a></li>
+						<li><a href="/category/edibles">Edibles</a></li>
+					</ul>
+				</div>
 			</div>
 			<div id="page-body">
 			</div>

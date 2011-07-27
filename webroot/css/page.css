@@ -5,3 +5,51 @@ html {
 	width: 960px;
 	margin: 0 auto;
 }
+#page-body {
+	width: 960px;
+	margin: 0 auto;
+}
+#page-footer {
+	background: transparent url(../img/logo.png) 50% -271px no-repeat;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 1024px;
+	position: relative;
+	left: -44px;
+	margin-right: -64px;
+}
+#page-footer .content {
+	width: 960px;
+	margin-left: 44px;
+	text-align: center;
+}
+#page-footer  address {
+	display: block;
+	margin-bottom: 20px;
+}
+#page-footer ul li {
+	display: inline;
+	padding: 0 10px;
+}
+.category-title {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.subcategory-list {
+	width: 960px;
+	overflow: hidden;
+}
+.subcategory-list li {
+	width: 320px;
+	float: left;
+}
+.subcategory-item {
+	padding: 20px;
+	height: 320px;
+}
+.subcategory-item a {
+	display: block;
+}
+.subcategory-item img {
+	width: 100%;
+}

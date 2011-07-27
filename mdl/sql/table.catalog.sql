@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `catalog` (
+	`id` INT PRIMARY KEY,
+	`name` TINYTEXT NOT NULL,
+	`slug` VARCHAR(32) NOT NULL,
+	`parent` INT NOT NULL,
+	`view` TINYTEXT,
+	`badge` TINYTEXT
+) CHARSET=utf8;

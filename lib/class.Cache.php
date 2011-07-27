@@ -4,19 +4,34 @@ class Cache implements ArrayAccess, Iterator {
 	private $cacheDir;
 	private $index;
 	private $currentItem;
-
-	public static function cacheVal($namespace, $keys, $value=null) {
+	private static $webCacheLife = 3600;
+	
+	private static function age($cacheFile) {
+		$stat = stat($cacheFile);
+		return mktime()-$stat[9];
+	}
+	
+	public static function cacheVal($namespace, $keys, $value=null, $life=null) {
 		$cacheDir = dirname(__FILE__).'/cache/';
 		if (!is_dir($cacheDir)) mkdir($cacheDir);
 		$cacheId = $namespace.'-'.md5($keys);
 		if ($value === null) {
 			if (!file_exists($cacheDir.$cacheId)) return null;
-			return unserialize(file_get_contents($cacheDir.$cacheId));
+			$ret = unserialize(file_get_contents($cacheDir.$cacheId));
+			if (!is_object($ret)) return $ret;
+			if (empty($ret->___life___)) return $ret;
+			$life = $ret->___life___;
+			if ($life === -1) return @$ret->___data___;
+			$age = self::age($cacheDir.$cacheId);
+			if ($life-$age <= 0) return null;
+			return @$ret->___data___;
 		}
 		if (file_exists($cacheDir.$cacheId)) unlink($cacheDir.$cacheId);
 		if ($value !== false) 
-			file_put_contents($cacheDir.$cacheId, serialize($value));
-		
+			file_put_contents($cacheDir.$cacheId, serialize((object)array(
+				'___life___'=>$life===null?-1:$life,
+				'___data___'=>$value
+			)));
 		return $value;
 	}
 	
@@ -56,9 +71,17 @@ class Cache implements ArrayAccess, Iterator {
 	}
 	public function current() { return $this->currentItem; }
 	public function valid() { return $this->currentItem !== false; }
+	public function urlRequest($url) {
+		if (null === ($urlData = cache('Cache;urlRequest', $url))) {
+			self::cacheVal('Cache;urlRequest', $url, $urlData = file_get_contents($url), self::$webCacheLife);
+		}
+		return $urlData;
+	}
 }
-function Cache($namespace, $keys, $value=null) {
-	return Cache::cacheVal($namespace, $keys, $value);
+function Cache($namespace, $keys, $value=null, $life=null) {
+	return Cache::cacheVal($namespace, $keys, $value, $life);
 }
-
+function UrlGetContents($url) {
+	return Cache::urlRequest($url);
+}
 

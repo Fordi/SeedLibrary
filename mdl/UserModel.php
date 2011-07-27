@@ -1,4 +1,6 @@
 <?php
+require_once(dirname(__FILE__).'/../lib/core.php');
+useLibraries('DB');
 class UserModel extends Model {
 	static private $table='userseedreg';
 	static private $db;

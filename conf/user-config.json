@@ -1,0 +1,21 @@
+{
+	"location":{
+		"name": "Jenkintown Library",
+		"address":[
+			"460 Old York Road"
+		],
+		"locality":"Jenkintown, PA",
+		"postal": "19046",
+		"tel": "215-884-0593"
+	},
+	"links": {
+		"site": {
+			"display": "Jenkintown Library website",
+			"url": "http://jkl.mclinc.org/"
+		},
+		"staffEmail": {
+			"display": "jenkstaff@mclinc.org",
+			"url": "mailto:jenkstaff@mclinc.org"
+		}
+	}
+}

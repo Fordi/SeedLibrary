@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title><?=String("Site.HtmlPage.Title")?><?=empty($pageTitle)?'':(' :: '.$pageTitle)?></title>
-		<link rel="stylesheet" href="/font/gill-sans.css" />
+		<link rel="stylesheet" href="/css/reset.css" />
+		<link rel="stylesheet" href="/font/tuffy.css" />
 		<link rel="stylesheet" href="/css/sitewide.css" />
+		<link rel="stylesheet" href="/css/page.css" />
+		<link rel="stylesheet" href="/css/header.css" />
+		
 		<noscript>
-			<link rel="stylesheet" href="css/sitewide-noscript.css" />
+			<link rel="stylesheet" href="/css/sitewide-noscript.css" />
 		</noscript>
 		<!--
 		<script src="/js/jquery.js"></script>
@@ -13,9 +17,9 @@
 		-->
 	</head>
 	<body class="<?=$pageClass?>">
-		<div id="content">
+		<?tag('chrome.site')?>
 			<?=$content?>
-		</div>
+		<?=tag()?>
 		<pre><?=String::ExportMissing()?></pre><br />
 	</body>
 </html>

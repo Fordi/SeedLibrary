@@ -2,7 +2,7 @@
 <?=tag('form', array(
 	'_action'=>Controller::URL("User", "Register"),
 	'_caption'=>String('User.Register.Title'),
-	'_id'=>'newUser'
+	'_id'=>empty($form['id'])?'newUser':$form['id']
 ))?>
 	<p><?=String('User.Register.Instructions')?></p>
 	<?=tag('input.text', array(

@@ -41,3 +41,5 @@ INSERT INTO `string` (`locale`, `name`, `string`) VALUES
 	("en_US", "User.Register.Volunteer-Other", "Other"),
 	("en_US", "User.Register.Submit", "Become a Member");
 	
+INSERT INTO `string` (`locale`,`name`,`string`) VALUES
+	("en_US", "Site.Link.Help", "Help");
